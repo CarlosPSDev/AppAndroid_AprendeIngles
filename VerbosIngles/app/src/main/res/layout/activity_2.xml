@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorAct2"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/tv_verbo_spa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="21sp"
+        />
+    <EditText
+        android:id="@+id/etv_infin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/verb_infin"
+        android:gravity="center"
+        android:layout_below="@id/tv_verbo_spa"
+        android:layout_marginTop="45dp"
+        />
+    <EditText
+        android:id="@+id/etv_pas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/verb_pas"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/tv_verbo_spa"
+        android:layout_marginTop="45dp"
+        />
+
+    <EditText
+        android:id="@+id/etv_partic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/verb_partic"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_verbo_spa"
+        android:layout_marginTop="45dp"
+        />
+    <Button
+        android:id="@+id/btn_compro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_comprobar"
+        android:layout_below="@+id/etv_infin"
+        android:layout_marginTop="40dp"
+        android:textSize="17sp"
+        android:background="@color/btn1"
+       android:layout_marginLeft="50dp"
+        android:onClick="comprobar"/>
+    <Button
+        android:id="@+id/btn_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_limpiar"
+        android:layout_below="@+id/etv_infin"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/btn_compro"
+        android:background="@color/btn1"
+        android:layout_marginLeft="50dp"
+        android:onClick="limpiar"/>
+    <TextView
+        android:id="@+id/tv_verifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_compro"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_verifi"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/btn2"
+        android:enabled="false"
+        android:onClick="siguiente"
+        android:text="@string/btn_sigui"
+        android:textSize="19sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_verifi"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/btn2"
+        android:enabled="false"
+        android:onClick="fin"
+        android:text="@string/btn_fin"
+        android:textSize="19sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

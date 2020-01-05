@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Verbos en Inglés</string>
+    <string name="nombre">Introduce tu nombre</string>
+    <string name="num_intentos">Introduce el número de intentos entre 1 y 50</string>
+    <string name="btn_acceder1">Acceder</string>
+    <string name="toast_rellenar">Se deben introducir todos los datos</string>
+    <string name="verb_infin">infinitive</string>
+    <string name="verb_pas">past simple</string>
+    <string name="verb_partic">participle</string>
+    <string name="btn_comprobar">COMPROBAR</string>
+    <string name="btn_limpiar">LIMPIAR CAMPOS</string>
+    <string name="btn_sigui">SIGUIENTE</string>
+    <string name="btn_fin">FIN</string>
+    <string name="msg_acierto">CORRECTO!!!</string>
+    <string name="msg_error">NO ES CORRECTO!!</string>
+    <string name="aciertos_fallos">ACIERTOS: %1$d \nFALLOS: %2$d</string>
+</resources>
